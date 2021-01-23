@@ -22,3 +22,11 @@ C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\MaterialDesignThemes.Wpf.pd
 C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\Apallon1.csproj.CopyComplete
 C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\App.baml
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\HomePage.g.cs
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\HomePage.baml
+C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\EntityFramework.dll
+C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\EntityFramework.xml
+C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\Apallon1_Content.g.cs

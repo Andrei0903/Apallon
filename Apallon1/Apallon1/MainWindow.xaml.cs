@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Apallon1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace NavigationDrawerPopUpMenu2
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new HomePage());
+            Manager.MainFrame = MainFrame;
         }
 
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
@@ -47,7 +50,8 @@ namespace NavigationDrawerPopUpMenu2
 
         private void Btn_back_Click(object sender, RoutedEventArgs e)
         {
-            
+            this.MainFrame.GoBack();
+
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
@@ -58,7 +62,8 @@ namespace NavigationDrawerPopUpMenu2
             }
             else
             {
-                btn_back.Visibility = Visibility.Hidden;
+                //MessageBox.Show("Что закрывать будем ?", "Вопрос на засыпку");
+               // btn_back.Visibility = Visibility.Hidden;
             }
         }
 
@@ -68,6 +73,21 @@ namespace NavigationDrawerPopUpMenu2
             {
                 this.DragMove();
             }
+        }
+
+        private void Btn_close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_prof_go_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("В разработке", "Профиль");
+        }
+
+        private void Btn_help_go_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("В разработке", "Помощь");
         }
     }
 }
