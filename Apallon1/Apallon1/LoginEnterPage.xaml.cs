@@ -21,7 +21,7 @@ namespace Apallon1
     public partial class LoginEnterPage : Page
     {
 
-        List<string> nameList;
+      
 
         public LoginEnterPage()
         {

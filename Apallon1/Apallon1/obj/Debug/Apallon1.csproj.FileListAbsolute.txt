@@ -34,3 +34,7 @@ C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\LoginEnterPage.g.cs
 C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\RegisterUserPage.g.cs
 C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\LoginEnterPage.baml
 C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\RegisterUserPage.baml
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\CategoryPage\breadPage.g.cs
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\CategoryWindow.g.cs
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\CategoryPage\breadPage.baml
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\CategoryWindow.baml

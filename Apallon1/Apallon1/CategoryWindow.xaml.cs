@@ -1,5 +1,4 @@
-﻿using Apallon1;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,21 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NavigationDrawerPopUpMenu2
+namespace Apallon1
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Логика взаимодействия для CategoryWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CategoryWindow : Window
     {
-        public MainWindow()
+        public CategoryWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new HomePage());
-            Manager.MainFrame = MainFrame;
+            
+            //Manager.MainFrame = MainFrame;
         }
 
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
@@ -42,10 +40,9 @@ namespace NavigationDrawerPopUpMenu2
 
         private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           // UserControl usc = null;
+            // UserControl usc = null;
             GridMain.Children.Clear();
 
-          
         }
 
 
@@ -57,7 +54,7 @@ namespace NavigationDrawerPopUpMenu2
             }
             else
             {
-               btn_back_f.Visibility = Visibility.Hidden;
+                btn_back_f.Visibility = Visibility.Hidden;
             }
         }
 
@@ -97,12 +94,7 @@ namespace NavigationDrawerPopUpMenu2
         private void Clic_btn_category_MouseDown(object sender, MouseButtonEventArgs e)
         {
             //
-         
-            this.Close();
-            CategoryWindow CWindow = new CategoryWindow();
-            CWindow.Show();
-            MessageBox.Show("goot");
-
+            //
         }
     }
 }

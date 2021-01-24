@@ -1,11 +1,13 @@
-﻿<Window x:Class="NavigationDrawerPopUpMenu2.MainWindow"
+﻿<Window x:Class="Apallon1.CategoryWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:NavigationDrawerPopUpMenu2"
+        xmlns:local="clr-namespace:Apallon1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="600" Width="1080" Foreground="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="img/аполлон (1).png">
+        mc:Ignorable="d"
+        Height="600" Width="1080" Foreground="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="img/аполлон (1).png">
+
     <Window.Resources>
         <Storyboard x:Key="OpenMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
@@ -75,38 +77,38 @@
                 <ListView x:Name="ListViewMenu" Foreground="#FF5C99D6" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewMenu_SelectionChanged">
                     <ListViewItem x:Name="ItemHome" Height="60">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="account" Height="25" Width="25" Margin="10"/>
-                            <TextBlock Text="Профиль" VerticalAlignment="Center" Margin="20 10"/>
+                            <materialDesign:PackIcon Kind="bread" Height="25" Width="25" Margin="10"/>
+                            <TextBlock Text="Хлебобулочные изделия " VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem x:Name="ItemCreate" Height="60">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="basket" Height="25" Width="25" Margin="10"/>
-                            <TextBlock Text="Корзина" VerticalAlignment="Center" Margin="20 10"/>
+                            <materialDesign:PackIcon Kind="fruitcherries" Height="25" Width="25" Margin="10"/>
+                            <TextBlock Text="Плоды и овощи" VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem Height="60">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="sale" Height="25" Width="25" Margin="10"/>
-                            <TextBlock Text="Скидки" VerticalAlignment="Center"  Margin="20 10"/>
+                            <materialDesign:PackIcon Kind="cupcake" Height="25" Width="25" Margin="10"/>
+                            <TextBlock Text="Кондитерские изделия" VerticalAlignment="Center"  Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem Height="60">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="support" Height="25" Width="25" Margin="10"/>
-                            <TextBlock Text="Тех. Поддержка" VerticalAlignment="Center"  Margin="20 10"/>
+                            <materialDesign:PackIcon Kind="foodsteak" Height="25" Width="25" Margin="10"/>
+                            <TextBlock Text="Мясные и колбасные изделия" VerticalAlignment="Center"  Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem Height="60">
-                        <StackPanel Orientation="Horizontal" Name="clic_btn_category" MouseDown="Clic_btn_category_MouseDown">
-                            <materialDesign:PackIcon Kind="shape" Height="25" Width="25" Margin="10"/>
-                            <TextBlock Text="Категории " VerticalAlignment="Center"  Margin="20 10"/>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Coffee" Height="25" Width="25" Margin="10"/>
+                            <TextBlock Text="Кофе и чай " VerticalAlignment="Center"  Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem Height="60" >
                         <StackPanel Orientation="Horizontal" >
-                            <materialDesign:PackIcon Kind="Settings" Height="25" Width="25" Margin="10"/>
-                            <TextBlock Text="Настройки" VerticalAlignment="Center"  Margin="20 10"/>
+                            <materialDesign:PackIcon Kind="beeroutline" Height="25" Width="25" Margin="10"/>
+                            <TextBlock Text="Молочная продукция " VerticalAlignment="Center"  Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem Height="60" Name="btn_back_f" MouseDown="Btn_back_f_MouseDown" >
