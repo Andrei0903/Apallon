@@ -30,3 +30,7 @@ C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\EntityFramework.xml
 C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\EntityFramework.SqlServer.xml
 C:\Developer\Project\WPF\Apallon1\Apallon1\bin\Debug\ru\EntityFramework.resources.dll
 C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\Apallon1_Content.g.cs
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\LoginEnterPage.g.cs
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\RegisterUserPage.g.cs
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\LoginEnterPage.baml
+C:\Developer\Project\WPF\Apallon1\Apallon1\obj\Debug\RegisterUserPage.baml

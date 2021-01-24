@@ -44,7 +44,7 @@
                         <Button Content="Помощь" Name="btn_help_go" Click="Btn_help_go_Click"/>
                         <Button Content="Закрыть" Name="btn_close" Click="Btn_close_Click" />
                         <Separator/>
-                        <Button Content="Регистрация"/>
+                        <Button Content="Авторизация" Name="btn_go_LoginEnterPage" Click="Btn_go_LoginEnterPage_Click"/>
                     </StackPanel>
                 </materialDesign:PopupBox>
             </StackPanel>

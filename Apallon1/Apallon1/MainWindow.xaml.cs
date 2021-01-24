@@ -89,5 +89,10 @@ namespace NavigationDrawerPopUpMenu2
         {
             MessageBox.Show("В разработке", "Помощь");
         }
+
+        private void Btn_go_LoginEnterPage_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new LoginEnterPage());
+        }
     }
 }
