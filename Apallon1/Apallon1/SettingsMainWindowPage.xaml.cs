@@ -10,18 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Apallon1
 {
     /// <summary>
-    /// Логика взаимодействия для MenuwundowsControls.xaml
+    /// Логика взаимодействия для SettingsMainWindowPage.xaml
     /// </summary>
-    public partial class MenuwundowsControls : Window
+    public partial class SettingsMainWindowPage : Page
     {
-        public MenuwundowsControls()
+        public SettingsMainWindowPage()
         {
             InitializeComponent();
         }
+
+       
     }
 }

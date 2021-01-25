@@ -104,14 +104,14 @@
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem Height="60" >
-                        <StackPanel Orientation="Horizontal" >
-                            <materialDesign:PackIcon Kind="Settings" Height="25" Width="25" Margin="10"/>
+                        <StackPanel Orientation="Horizontal" Name="Setting_goPage" MouseDown="Setting_goPage_MouseDown">
+                            <materialDesign:PackIcon Kind="Settings" Height="25" Width="25" Margin="10"  />
                             <TextBlock Text="Настройки" VerticalAlignment="Center"  Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
-                    <ListViewItem Height="60" Name="btn_back_f" MouseDown="Btn_back_f_MouseDown" >
-                        <StackPanel Orientation="Horizontal" >
-                            <materialDesign:PackIcon Kind="Backburger" Height="25" Width="25" Margin="10"/>
+                    <ListViewItem Height="60"  >
+                        <StackPanel Orientation="Horizontal"  Name="btn_back_f" MouseDown="Btn_back_f_MouseDown">
+                            <materialDesign:PackIcon Kind="Backburger" Height="25" Width="25" Margin="10" />
                             <TextBlock Text="Назад" VerticalAlignment="Center"  Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>

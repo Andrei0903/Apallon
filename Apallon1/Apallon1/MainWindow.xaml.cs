@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace NavigationDrawerPopUpMenu2
 {
     /// <summary>
@@ -96,13 +97,21 @@ namespace NavigationDrawerPopUpMenu2
 
         private void Clic_btn_category_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //
-         
-            this.Close();
-            CategoryWindow CWindow = new CategoryWindow();
-            CWindow.Show();
-            MessageBox.Show("goot");
+            // Нужно что-то с этим делать. 
+            
+           
 
+        }
+
+        private void Btn_settings_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //setting page
+           
+        }
+
+        private void Setting_goPage_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new SettingsMainWindowPage());
         }
     }
 }
