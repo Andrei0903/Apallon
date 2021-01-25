@@ -171,5 +171,10 @@ namespace NavigationDrawerPopUpMenu2
             GridMenu.Background = (Brush)BlueGridMenu.ConvertFrom("#a3ddcb");
 
         }
+
+        private void User_profil_go_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new testingPage());
+        }
     }
 }

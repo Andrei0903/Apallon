@@ -21,7 +21,7 @@ namespace Apallon1
     public partial class LoginEnterPage : Page
     {
 
-      
+
 
         public LoginEnterPage()
         {
@@ -29,26 +29,9 @@ namespace Apallon1
 
             SuperShopEntities.Getcontext().Клиенты.ToList();
 
-            /*
-            try
-            {
-                SuperShopEntities db = new SuperShopEntities();
 
-                var user = db.Клиенты.Where(d => d.isenabled == true);
-                nameList = new List<string>();
-
-                foreach (var item in user)
-                {
-                    nameList.Add(item.имя + " " + item.фамилия);
-                }
-
-            }
-            catch (Exception er)
-            {
-                MessageBox.Show(er.ToString());
-            }
-            */
         }
+
 
         private void Btn_go_reg_page_Click(object sender, RoutedEventArgs e)
         {
@@ -57,7 +40,7 @@ namespace Apallon1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            //Создаем подключение
         }
 
         private void Btn_go_RegisterUserPage_Click(object sender, RoutedEventArgs e)

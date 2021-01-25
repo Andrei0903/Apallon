@@ -52,7 +52,6 @@ C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\bin\Debug\MaterialDesignT
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\bin\Debug\ru\EntityFramework.resources.dll
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\Apallon1.csprojAssemblyReference.cache
-C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\CategoryPage\breadPage.g.cs
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\HomePage.g.cs
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\LoginEnterPage.g.cs
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\MainWindow.g.cs
@@ -62,7 +61,6 @@ C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\Apallon1_Conten
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\Apallon1_MarkupCompile.cache
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\Apallon1_MarkupCompile.lref
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\App.baml
-C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\CategoryPage\breadPage.baml
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\HomePage.baml
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\LoginEnterPage.baml
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\MainWindow.baml
@@ -74,5 +72,5 @@ C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\Apallon1.csproj
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\Apallon1.csproj.CopyComplete
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\Apallon1.exe
 C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\Apallon1.pdb
-C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\SettingsMainWindowPage.g.cs
-C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\SettingsMainWindowPage.baml
+C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\testingPage.g.cs
+C:\Developer\Project\WPF\git\Apallon\Apallon1\Apallon1\obj\Debug\testingPage.baml

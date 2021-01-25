@@ -84,7 +84,7 @@
                 <ListView x:Name="ListViewMenu" Foreground="#FF5C99D6" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewMenu_SelectionChanged">
                     <ListViewItem x:Name="ItemHome" Height="60">
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="account" Height="25" Width="25" Margin="10"/>
+                            <materialDesign:PackIcon Name="user_profil_go" MouseDown="User_profil_go_MouseDown" Kind="account" Height="25" Width="25" Margin="10"/>
                             <TextBlock Text="Профиль" VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>

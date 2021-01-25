@@ -72,10 +72,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CategoryPage\breadPage.xaml.cs">
-      <DependentUpon>breadPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CategoryPage\Product.cs" />
     <Compile Include="LoginEnterPage.xaml.cs">
       <DependentUpon>LoginEnterPage.xaml</DependentUpon>
     </Compile>
@@ -87,11 +83,11 @@
     <Compile Include="RegisterUserPage.xaml.cs">
       <DependentUpon>RegisterUserPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SettingsMainWindowPage.xaml.cs">
-      <DependentUpon>SettingsMainWindowPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="testingPage.xaml.cs">
+      <DependentUpon>testingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Клиенты.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -102,10 +98,6 @@
     <Compile Include="Товар.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Page Include="CategoryPage\breadPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -133,7 +125,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SettingsMainWindowPage.xaml">
+    <Page Include="testingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -206,7 +198,6 @@
   <ItemGroup>
     <Resource Include="img\КартаАппалон.png" />
     <Resource Include="img\MainMenuSR.gif" />
-    <Resource Include="CategoryPage\img\bread1.jpg" />
     <Content Include="img\MainMenuSR.mp4" />
     <Content Include="img\MainMenuSR.wmv" />
     <Resource Include="img\2.png" />
