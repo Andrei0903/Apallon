@@ -62,8 +62,13 @@ namespace NavigationDrawerPopUpMenu2
             }
         }
 
+
+       
+
+
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
+         
             if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
@@ -103,15 +108,68 @@ namespace NavigationDrawerPopUpMenu2
 
         }
 
-        private void Btn_settings_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Btn_theme_dark_Click(object sender, RoutedEventArgs e)
         {
-            //setting page
-           
+
+            BrushConverter DarkHeader = new BrushConverter();
+            BrushConverter DarkFrom = new BrushConverter();
+            BrushConverter Darkhamburger = new BrushConverter();
+            BrushConverter DarkGridMenu = new BrushConverter();
+
+
+            header_main.Background = (Brush)DarkHeader.ConvertFrom("#222831");  // FF161C24
+            MainFrame.Background = (Brush)DarkFrom.ConvertFrom("#393e46"); //FFB4B4B4
+            hamburger.Background = (Brush)Darkhamburger.ConvertFrom("#351f39"); //#fff
+            GridMenu.Background = (Brush)DarkGridMenu.ConvertFrom("#351f39"); //FF5C99D6
+
+
+            //GridMenu.Background = (Brush)DarkGridMenu.ConvertFrom("FFD369"); //FF31577E // FFD369
+
+            //GridMenu.Background = Brushes.DarkSlateGray;
         }
 
-        private void Setting_goPage_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Btn_theme_Light_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new SettingsMainWindowPage());
+            BrushConverter LightHeader = new BrushConverter();
+            BrushConverter LightFrom = new BrushConverter();
+            BrushConverter Lighthamburger = new BrushConverter();
+            BrushConverter LightGridMenu = new BrushConverter();
+
+            header_main.Background = (Brush)LightHeader.ConvertFrom("#FF5C99D6");
+            MainFrame.Background = (Brush)LightFrom.ConvertFrom("#FFDEDEDE");
+            hamburger.Background = (Brush)Lighthamburger.ConvertFrom("#fff");
+
+            GridMenu.Background = (Brush)LightGridMenu.ConvertFrom("#FF31577E"); 
+
+        }
+
+        private void Btn_theme_red_Click(object sender, RoutedEventArgs e)
+        {
+            BrushConverter redHeader = new BrushConverter();
+            BrushConverter redFrom = new BrushConverter();
+            BrushConverter redhamburger = new BrushConverter();
+            BrushConverter redGridMenu = new BrushConverter();
+            header_main.Background = (Brush)redHeader.ConvertFrom("#d35d6e");
+            MainFrame.Background = (Brush)redFrom.ConvertFrom("#efb08c");
+            hamburger.Background = (Brush)redhamburger.ConvertFrom("#f8d49d");
+
+            GridMenu.Background = (Brush)redGridMenu.ConvertFrom("#f8d49d");
+
+        }
+
+        private void Btn_thenme_blue_Click(object sender, RoutedEventArgs e)
+        {
+            BrushConverter BlueHeader = new BrushConverter();
+            BrushConverter BlueFrom = new BrushConverter();
+            BrushConverter Bluehamburger = new BrushConverter();
+            BrushConverter BlueGridMenu = new BrushConverter();
+
+            header_main.Background = (Brush)BlueHeader.ConvertFrom("#0a043c");
+            MainFrame.Background = (Brush)BlueFrom.ConvertFrom("#03506f");
+            hamburger.Background = (Brush)Bluehamburger.ConvertFrom("#a3ddcb");
+
+            GridMenu.Background = (Brush)BlueGridMenu.ConvertFrom("#a3ddcb");
+
         }
     }
 }

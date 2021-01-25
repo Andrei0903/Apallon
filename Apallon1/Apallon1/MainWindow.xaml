@@ -28,10 +28,10 @@
             <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
         </EventTrigger>
     </Window.Triggers>
-    <Grid Background="#FFDEDEDE">
-        <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="540" Width="1010" Margin="0,0,10,-5"/>
+    <Grid Background="#FFDEDEDE" >
+        <Grid Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="540" Width="1010" Margin="0,0,10,-5"/>
         <Frame Grid.Row="2" Grid.Column="2" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden"/>
-        <Grid Height="60" VerticalAlignment="Top" Background="#FF5C99D6" MouseDown="Grid_MouseDown" >
+        <Grid Height="60" VerticalAlignment="Top" Background="#FF5C99D6" MouseDown="Grid_MouseDown"  x:Name="header_main">
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#FFACACAC"/>
             </Grid.Effect>
@@ -41,6 +41,14 @@
                     <StackPanel Width="150">
                         <Button Content="Профиль" Name="btn_prof_go" Click="Btn_prof_go_Click"/>
                         <Button Content="Помощь" Name="btn_help_go" Click="Btn_help_go_Click"/>
+                        <Menu>
+                            <MenuItem Header="Темы ">
+                                <MenuItem Header="Темная" Name="btn_theme_dark" Click="Btn_theme_dark_Click"/>
+                                <MenuItem Header="Светлая" Name="btn_theme_Light" Click="Btn_theme_Light_Click"/>
+                                <MenuItem Header="Красный" Name="btn_theme_red" Click="Btn_theme_red_Click"/>
+                                <MenuItem Header="Синий"  Name="btn_thenme_blue" Click="Btn_thenme_blue_Click"/>
+                            </MenuItem>
+                        </Menu>
                         <Button Content="Закрыть" Name="btn_close" Click="Btn_close_Click" />
                         <Separator/>
                         <Button Content="Авторизация" Name="btn_go_LoginEnterPage" Click="Btn_go_LoginEnterPage_Click"/>
@@ -54,7 +62,7 @@
                 <DropShadowEffect BlurRadius="2" ShadowDepth="1" Color="#FFAEAEAE"/>
             </Grid.Effect>
             <StackPanel>
-                <Grid Height="150" Background="White" RenderTransformOrigin="0.5,0.5">
+                <Grid  Name="hamburger" Height="130" Background="#FFF" RenderTransformOrigin="0.5,0.5">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -63,6 +71,7 @@
                             <TranslateTransform/>
                         </TransformGroup>
                     </Grid.RenderTransform>
+
                     <Button x:Name="ButtonOpenMenu" Height="60" Width="60" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF31577E" Click="ButtonOpenMenu_Click">
                         <materialDesign:PackIcon Kind="Menu" Width="25" Height="25"/>
                     </Button>
@@ -71,7 +80,7 @@
                     </Button>
 
                     <Image Height="71" VerticalAlignment="Bottom" Source="img/аполлон (1).png" />
-                </Grid>
+                </Grid >
                 <ListView x:Name="ListViewMenu" Foreground="#FF5C99D6" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewMenu_SelectionChanged">
                     <ListViewItem x:Name="ItemHome" Height="60">
                         <StackPanel Orientation="Horizontal">
@@ -101,12 +110,6 @@
                         <StackPanel Orientation="Horizontal" Name="clic_btn_category" MouseDown="Clic_btn_category_MouseDown">
                             <materialDesign:PackIcon Kind="shape" Height="25" Width="25" Margin="10"/>
                             <TextBlock Text="Категории " VerticalAlignment="Center"  Margin="20 10"/>
-                        </StackPanel>
-                    </ListViewItem>
-                    <ListViewItem Height="60" >
-                        <StackPanel Orientation="Horizontal" Name="Setting_goPage" MouseDown="Setting_goPage_MouseDown">
-                            <materialDesign:PackIcon Kind="Settings" Height="25" Width="25" Margin="10"  />
-                            <TextBlock Text="Настройки" VerticalAlignment="Center"  Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem Height="60"  >

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MaterialDesignThemes;
+
 
 namespace Apallon1
 {
@@ -25,6 +27,9 @@ namespace Apallon1
             InitializeComponent();
         }
 
-       
+        private void ThemeLight_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
