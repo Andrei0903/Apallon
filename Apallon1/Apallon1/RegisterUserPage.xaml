@@ -10,7 +10,7 @@
       Title="RegisterUserPage">
 
     <Grid Background="#ffdadada">
-        <Border MinWidth="400" MaxWidth="550" CornerRadius="20" Margin="15" Background="#fff" VerticalAlignment="Center" Padding="30">
+        <Border Name="DBgrid" MinWidth="400" MaxWidth="550" CornerRadius="20" Margin="15" Background="#fff" VerticalAlignment="Center" Padding="30">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0" />
             </Border.Effect>
@@ -24,7 +24,7 @@
                 <TextBox Text="{Binding фамилия}" x:Name="textBoxNameLast_reg" materialDesign:HintAssist.Hint="Введите фамилию" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
                 <TextBox Text="{Binding телефон}" x:Name="textBoxPhone" materialDesign:HintAssist.Hint="Введите телефон" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
                 <TextBox Text="{Binding логин}" x:Name="textBoxLogin" materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-                <PasswordBox  x:Name="PasswordBox" materialDesign:HintAssist.Hint="Введите Пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <PasswordBox BindingGroup="{Binding пароль}" x:Name="PasswordBox" materialDesign:HintAssist.Hint="Введите Пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
                 <PasswordBox x:Name="PasswordBox1" materialDesign:HintAssist.Hint="Повторите Пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
 
             </StackPanel>

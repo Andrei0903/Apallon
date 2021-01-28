@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/mainmenusr.mp4")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/mainmenusr.wmv")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model1.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model1.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/mainmenusr.mp4")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/mainmenusr.wmv")]
 
 

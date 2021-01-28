@@ -21,13 +21,13 @@ namespace Apallon1
     public partial class RegisterUserPage : Page
     {
 
-        //private RegisterUserPage _correntRegister = new RegisterUserPage();
+        private Клиенты _correnClients = new Клиенты();
         public RegisterUserPage()
         {
             InitializeComponent();
-           
+            DataContext = _correnClients;
 
-            var db = SuperShopEntities.Getcontext().Клиенты.ToList();
+            SuperShopEntities1.Getcontext().Клиенты.ToList();
         }
 
         public int Id { get; private set; }
@@ -71,7 +71,7 @@ namespace Apallon1
             {
                 textBoxPhone.ToolTip = "Вы забыли про телефон";
                 textBoxPhone.Background = Brushes.DarkRed;
-
+           
             }
 
 
@@ -82,6 +82,11 @@ namespace Apallon1
                 textBoxLogin.Background = Brushes.Transparent;
 
                 MessageBox.Show("Все хорошо");
+
+                SuperShopEntities1.Getcontext().Клиенты.Add(_correnClients);
+
+                SuperShopEntities1.Getcontext().SaveChanges();
+
             }
         }
     }

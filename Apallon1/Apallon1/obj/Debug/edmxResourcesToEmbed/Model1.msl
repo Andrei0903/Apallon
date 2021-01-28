@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище SuperShopModelContainer" CdmEntityContainer="SuperShopEntities">
+  <EntityContainerMapping StorageEntityContainer="Хранилище SuperShopModelContainer" CdmEntityContainer="SuperShopEntities1">
     <EntitySetMapping Name="sysdiagrams">
       <EntityTypeMapping TypeName="SuperShopModel.sysdiagrams">
         <MappingFragment StoreEntitySet="sysdiagrams">
@@ -9,6 +9,22 @@
           <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
           <ScalarProperty Name="version" ColumnName="version" />
           <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Администрация">
+      <EntityTypeMapping TypeName="SuperShopModel.Администрация">
+        <MappingFragment StoreEntitySet="Администрация">
+          <ScalarProperty Name="код_админа" ColumnName="код_админа" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="имя" ColumnName="имя" />
+          <ScalarProperty Name="отчество" ColumnName="отчество" />
+          <ScalarProperty Name="пол" ColumnName="пол" />
+          <ScalarProperty Name="Должность" ColumnName="Должность" />
+          <ScalarProperty Name="Дата_выхода" ColumnName="Дата_выхода" />
+          <ScalarProperty Name="тэг" ColumnName="тэг" />
+          <ScalarProperty Name="код" ColumnName="код" />
+          <ScalarProperty Name="пароль" ColumnName="пароль" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -25,6 +41,29 @@
           <ScalarProperty Name="логин" ColumnName="логин" />
           <ScalarProperty Name="пароль" ColumnName="пароль" />
           <ScalarProperty Name="фото" ColumnName="фото" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Покупка">
+      <EntityTypeMapping TypeName="SuperShopModel.Покупка">
+        <MappingFragment StoreEntitySet="Покупка">
+          <ScalarProperty Name="код_Покупки" ColumnName="код_Покупки" />
+          <ScalarProperty Name="код_клиента" ColumnName="код_клиента" />
+          <ScalarProperty Name="код_товара" ColumnName="код_товара" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+          <ScalarProperty Name="дата_покупки" ColumnName="дата_покупки" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Поставка">
+      <EntityTypeMapping TypeName="SuperShopModel.Поставка">
+        <MappingFragment StoreEntitySet="Поставка">
+          <ScalarProperty Name="код_поставки" ColumnName="код_поставки" />
+          <ScalarProperty Name="код_поставщика" ColumnName="код_поставщика" />
+          <ScalarProperty Name="код_товара" ColumnName="код_товара" />
+          <ScalarProperty Name="количество" ColumnName="количество" />
+          <ScalarProperty Name="цена_поставки" ColumnName="цена_поставки" />
+          <ScalarProperty Name="дата_поставки" ColumnName="дата_поставки" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

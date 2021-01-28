@@ -24,7 +24,7 @@ namespace Apallon1
         {
             InitializeComponent();
 
-            DGTable.ItemsSource = SuperShopEntities.Getcontext().Клиенты.ToList();
+            DGTable.ItemsSource = SuperShopEntities1.Getcontext().Клиенты.ToList();
         }
 
         private void TextBox_SourceUpdated(object sender, DataTransferEventArgs e)

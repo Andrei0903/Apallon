@@ -20,8 +20,8 @@
                     <Button HorizontalAlignment="Right" Click="Button_Click" Content="Войти" Style="{StaticResource MaterialDesignFlatButton}"/>
                     <Button HorizontalAlignment="Left" Name="btn_go_reg_page" Click="Btn_go_reg_page_Click" Content="Регистрация"/>
                 </Grid>
-                <TextBox materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-                <PasswordBox materialDesign:HintAssist.Hint="Введите Пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <TextBox Name="EnterName" materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <PasswordBox Name="EnterPassword" materialDesign:HintAssist.Hint="Введите Пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
 
             </StackPanel>
         </Border>

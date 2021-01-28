@@ -27,7 +27,7 @@ namespace Apallon1
         {
             InitializeComponent();
 
-            SuperShopEntities.Getcontext().Клиенты.ToList();
+            SuperShopEntities1.Getcontext().Клиенты.ToList();
 
 
         }
@@ -40,7 +40,23 @@ namespace Apallon1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //Создаем подключение
+            string login = EnterName.Text.Trim();
+            string password = EnterPassword.Password.Trim();
+
+            Клиенты authUser = null;
+            using (SuperShopEntities1 db = new SuperShopEntities1())
+            {
+                authUser = db.Клиенты.Where(d => d.логин == login && d.пароль == password).FirstOrDefault();
+            }
+
+            if (authUser != null)
+            {
+                MessageBox.Show("Имя: " + authUser.имя + " | " + "Фамилия: " + authUser.фамилия);
+            }
+            else
+            {
+                MessageBox.Show("Пользователь не найден");
+            }
         }
 
         private void Btn_go_RegisterUserPage_Click(object sender, RoutedEventArgs e)

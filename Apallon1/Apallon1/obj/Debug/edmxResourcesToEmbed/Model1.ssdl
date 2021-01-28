@@ -10,25 +10,26 @@
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
-  <!--Ошибки, обнаруженные при создании:
-предупреждение 6013: Первичный ключ в таблице или представлении "SuperShop.dbo.Администрация" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
-        <EntityType Name="Администрация">
-          <Property Name="код_админа" Type="int" />
-          <Property Name="Фамилия" Type="nvarchar" MaxLength="50" />
-          <Property Name="имя" Type="nvarchar" MaxLength="50" />
-          <Property Name="отчество" Type="nvarchar" MaxLength="50" />
-          <Property Name="пол" Type="nvarchar" MaxLength="2" />
-          <Property Name="Должность" Type="nvarchar" MaxLength="50" />
-          <Property Name="Дата_выхода" Type="date" />
-          <Property Name="тэг" Type="nvarchar" MaxLength="20" />
-          <Property Name="код" Type="nvarchar" MaxLength="30" />
-          <Property Name="пароль" Type="nvarchar" MaxLength="50" />
-        </EntityType>-->
+  <EntityType Name="Администрация">
+    <Key>
+      <PropertyRef Name="код_админа" />
+    </Key>
+    <Property Name="код_админа" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Фамилия" Type="nvarchar" MaxLength="50" />
+    <Property Name="имя" Type="nvarchar" MaxLength="50" />
+    <Property Name="отчество" Type="nvarchar" MaxLength="50" />
+    <Property Name="пол" Type="nvarchar" MaxLength="2" />
+    <Property Name="Должность" Type="nvarchar" MaxLength="50" />
+    <Property Name="Дата_выхода" Type="date" />
+    <Property Name="тэг" Type="nvarchar" MaxLength="20" />
+    <Property Name="код" Type="nvarchar" MaxLength="30" />
+    <Property Name="пароль" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="Клиенты">
     <Key>
       <PropertyRef Name="код_клиента" />
     </Key>
-    <Property Name="код_клиента" Type="int" Nullable="false" />
+    <Property Name="код_клиента" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="имя" Type="nvarchar" MaxLength="50" />
     <Property Name="фамилия" Type="nvarchar" MaxLength="50" />
     <Property Name="отчество" Type="nvarchar" MaxLength="50" />
@@ -39,30 +40,32 @@
     <Property Name="пароль" Type="nvarchar" MaxLength="50" />
     <Property Name="фото" Type="nvarchar" MaxLength="50" />
   </EntityType>
-  <!--Ошибки, обнаруженные при создании:
-предупреждение 6013: Первичный ключ в таблице или представлении "SuperShop.dbo.Покупка" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
-        <EntityType Name="Покупка">
-          <Property Name="код_Покупки" Type="int" />
-          <Property Name="код_клиента" Type="int" />
-          <Property Name="код_товара" Type="int" />
-          <Property Name="Количество" Type="int" />
-          <Property Name="дата_покупки" Type="date" />
-        </EntityType>-->
-  <!--Ошибки, обнаруженные при создании:
-предупреждение 6013: Первичный ключ в таблице или представлении "SuperShop.dbo.Поставка" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
-        <EntityType Name="Поставка">
-          <Property Name="код_поставки" Type="int" />
-          <Property Name="код_поставщика" Type="int" />
-          <Property Name="код_товара" Type="int" />
-          <Property Name="количество" Type="int" />
-          <Property Name="цена_поставки" Type="money" />
-          <Property Name="дата_поставки" Type="date" />
-        </EntityType>-->
+  <EntityType Name="Покупка">
+    <Key>
+      <PropertyRef Name="код_Покупки" />
+    </Key>
+    <Property Name="код_Покупки" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="код_клиента" Type="int" />
+    <Property Name="код_товара" Type="int" />
+    <Property Name="Количество" Type="int" />
+    <Property Name="дата_покупки" Type="date" />
+  </EntityType>
+  <EntityType Name="Поставка">
+    <Key>
+      <PropertyRef Name="код_поставки" />
+    </Key>
+    <Property Name="код_поставки" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="код_поставщика" Type="int" />
+    <Property Name="код_товара" Type="int" />
+    <Property Name="количество" Type="int" />
+    <Property Name="цена_поставки" Type="money" />
+    <Property Name="дата_поставки" Type="date" />
+  </EntityType>
   <EntityType Name="Поставщик">
     <Key>
       <PropertyRef Name="код_поставщика" />
     </Key>
-    <Property Name="код_поставщика" Type="int" Nullable="false" />
+    <Property Name="код_поставщика" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="наименование_фирмы" Type="nvarchar" MaxLength="50" />
     <Property Name="фамилия" Type="nvarchar" MaxLength="50" />
     <Property Name="имя" Type="nvarchar" MaxLength="50" />
@@ -75,28 +78,83 @@
     <Key>
       <PropertyRef Name="код_товара" />
     </Key>
-    <Property Name="код_товара" Type="int" Nullable="false" />
+    <Property Name="код_товара" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Наименование" Type="nvarchar" MaxLength="150" />
     <Property Name="Цена" Type="money" />
     <Property Name="Срок_Годности" Type="date" />
     <Property Name="Описание" Type="text" />
   </EntityType>
-  <!--Ошибки, обнаруженные при создании:
-ошибка 6004: Невозможно найти таблицу "SuperShop.dbo.Покупка", на которую ссылается связь.
-        <Association Name="FK_Покупка_Клиенты" />-->
-  <!--Ошибки, обнаруженные при создании:
-ошибка 6004: Невозможно найти таблицу "SuperShop.dbo.Покупка", на которую ссылается связь.
-        <Association Name="FK_Покупка_Товар" />-->
-  <!--Ошибки, обнаруженные при создании:
-ошибка 6004: Невозможно найти таблицу "SuperShop.dbo.Поставка", на которую ссылается связь.
-        <Association Name="FK_Поставка_Поставщик" />-->
-  <!--Ошибки, обнаруженные при создании:
-ошибка 6004: Невозможно найти таблицу "SuperShop.dbo.Поставка", на которую ссылается связь.
-        <Association Name="FK_Поставка_Товар" />-->
+  <Association Name="FK_Покупка_Клиенты">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="0..1" />
+    <End Role="Покупка" Type="Self.Покупка" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="код_клиента" />
+      </Principal>
+      <Dependent Role="Покупка">
+        <PropertyRef Name="код_клиента" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Покупка_Товар">
+    <End Role="Товар" Type="Self.Товар" Multiplicity="0..1" />
+    <End Role="Покупка" Type="Self.Покупка" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Товар">
+        <PropertyRef Name="код_товара" />
+      </Principal>
+      <Dependent Role="Покупка">
+        <PropertyRef Name="код_товара" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Поставка_Поставщик">
+    <End Role="Поставщик" Type="Self.Поставщик" Multiplicity="0..1" />
+    <End Role="Поставка" Type="Self.Поставка" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Поставщик">
+        <PropertyRef Name="код_поставщика" />
+      </Principal>
+      <Dependent Role="Поставка">
+        <PropertyRef Name="код_поставщика" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Поставка_Товар">
+    <End Role="Товар" Type="Self.Товар" Multiplicity="0..1" />
+    <End Role="Поставка" Type="Self.Поставка" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Товар">
+        <PropertyRef Name="код_товара" />
+      </Principal>
+      <Dependent Role="Поставка">
+        <PropertyRef Name="код_товара" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="Хранилище SuperShopModelContainer">
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Администрация" EntityType="Self.Администрация" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Клиенты" EntityType="Self.Клиенты" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Покупка" EntityType="Self.Покупка" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Поставка" EntityType="Self.Поставка" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Поставщик" EntityType="Self.Поставщик" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Товар" EntityType="Self.Товар" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Покупка_Клиенты" Association="Self.FK_Покупка_Клиенты">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="Покупка" EntitySet="Покупка" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Покупка_Товар" Association="Self.FK_Покупка_Товар">
+      <End Role="Товар" EntitySet="Товар" />
+      <End Role="Покупка" EntitySet="Покупка" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Поставка_Поставщик" Association="Self.FK_Поставка_Поставщик">
+      <End Role="Поставщик" EntitySet="Поставщик" />
+      <End Role="Поставка" EntitySet="Поставка" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Поставка_Товар" Association="Self.FK_Поставка_Товар">
+      <End Role="Товар" EntitySet="Товар" />
+      <End Role="Поставка" EntitySet="Поставка" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

@@ -12,26 +12,17 @@ namespace Apallon1
     using System;
     using System.Collections.Generic;
     
-    public partial class Клиенты
+    public partial class Администрация
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Клиенты()
-        {
-            this.Покупка = new HashSet<Покупка>();
-        }
-    
-        public int код_клиента { get; set; }
+        public int код_админа { get; set; }
+        public string Фамилия { get; set; }
         public string имя { get; set; }
-        public string фамилия { get; set; }
         public string отчество { get; set; }
-        public string телефон { get; set; }
-        public string email { get; set; }
         public string пол { get; set; }
-        public string логин { get; set; }
+        public string Должность { get; set; }
+        public Nullable<System.DateTime> Дата_выхода { get; set; }
+        public string тэг { get; set; }
+        public string код { get; set; }
         public string пароль { get; set; }
-        public string фото { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Покупка> Покупка { get; set; }
     }
 }

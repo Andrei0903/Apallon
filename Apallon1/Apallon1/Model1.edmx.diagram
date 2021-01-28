@@ -4,11 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d8fdcf8b44794a248807ab3dce13f228" Name="Diagram1">
-        <EntityTypeShape EntityType="SuperShopModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SuperShopModel.Клиенты" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SuperShopModel.Поставщик" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SuperShopModel.Товар" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+      <Diagram DiagramId="89afda67ddb74d6290daf24283fd9872" Name="Diagram1">
+        <EntityTypeShape EntityType="SuperShopModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperShopModel.Администрация" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperShopModel.Клиенты" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperShopModel.Покупка" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperShopModel.Поставка" Width="1.5" PointX="6" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperShopModel.Поставщик" Width="1.5" PointX="3.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperShopModel.Товар" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="SuperShopModel.FK_Покупка_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="SuperShopModel.FK_Покупка_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="SuperShopModel.FK_Поставка_Поставщик" ManuallyRouted="false" />
+        <AssociationConnector Association="SuperShopModel.FK_Поставка_Товар" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

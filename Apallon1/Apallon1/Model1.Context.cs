@@ -13,21 +13,20 @@ namespace Apallon1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SuperShopEntities : DbContext
+    public partial class SuperShopEntities1 : DbContext
     {
 
-        private static SuperShopEntities _context; 
+        private static SuperShopEntities1 _context;
 
-        public SuperShopEntities()
-            : base("name=SuperShopEntities")
+        public SuperShopEntities1()
+            : base("name=SuperShopEntities1")
         {
         }
 
-        public static SuperShopEntities Getcontext()
+        public static SuperShopEntities1 Getcontext()
         {
             if (_context == null)
-                _context = new SuperShopEntities();
-
+                _context = new SuperShopEntities1();
             return _context;
         }
     
@@ -37,7 +36,10 @@ namespace Apallon1
         }
     
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Администрация> Администрация { get; set; }
         public virtual DbSet<Клиенты> Клиенты { get; set; }
+        public virtual DbSet<Покупка> Покупка { get; set; }
+        public virtual DbSet<Поставка> Поставка { get; set; }
         public virtual DbSet<Поставщик> Поставщик { get; set; }
         public virtual DbSet<Товар> Товар { get; set; }
     }

@@ -14,6 +14,12 @@ namespace Apallon1
     
     public partial class Поставщик
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Поставщик()
+        {
+            this.Поставка = new HashSet<Поставка>();
+        }
+    
         public int код_поставщика { get; set; }
         public string наименование_фирмы { get; set; }
         public string фамилия { get; set; }
@@ -22,5 +28,8 @@ namespace Apallon1
         public string адрес { get; set; }
         public string телефон { get; set; }
         public string Email { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Поставка> Поставка { get; set; }
     }
 }
